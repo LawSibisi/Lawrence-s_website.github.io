@@ -1,4 +1,4 @@
-* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* Ensure consistent box sizing */
@@ -26,7 +26,6 @@
 .navbar .logo {
     width: 200px;
     cursor: pointer;
-    margin-top: -3%;
 }
 
 ul {
@@ -44,7 +43,6 @@ ul li a {
     font-weight: bold;
     text-decoration: none;
     color: darkslategray;
-    margin-top: -3%;
     transition: .4s ease;
 }
 
@@ -95,13 +93,9 @@ ul li a:hover {
 
 .image {
     width: 20%;
-    height: auto;
     position: absolute;
     right: 100px;
     bottom: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .image img {
@@ -122,8 +116,6 @@ ul li a:hover {
     align-items: flex-start;
     gap: 15px;
     margin: 20px 0;
-    margin-top: 20px;
-    margin-bottom: 100px;
 }
 
 .icons a {
@@ -134,7 +126,6 @@ ul li a:hover {
 }
 
 .icons ion-icon {
-    margin-left: 7%;
     font-size: 60px;
 }
 
@@ -214,7 +205,6 @@ ul li a:hover {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 16px;
 }
 
 .contact button {
@@ -234,11 +224,10 @@ ul li a:hover {
 }
 
 .cont {
-    display: flex; /* Added for layout */
-    justify-content: center; /* Center icons */
-    margin: -50px 0; /* Adjusted to provide vertical spacing */
-    gap: 50px; /* Add space between icons */
-     
+    display: flex;
+    justify-content: center;
+    margin: -50px 0;
+    gap: 50px;
 }
 
 .cont a { 
@@ -247,7 +236,6 @@ ul li a:hover {
 }
 
 .cont ion-icon { 
-    margin-left: 7%;
     color: #000;
     font-size: 40px;
     transition: .4s ease;
@@ -257,18 +245,13 @@ ul li a:hover {
     color: rgb(230, 104, 59);
 }
 
-
-
 footer {
     background: rgba(36, 32, 30, 0.9);
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: relative;
-    bottom: 0;
     width: 100%;
     font-size: 14px;
-    margin-top: 0px;
 }
 
 /* Chatbot Style */
@@ -354,8 +337,13 @@ button:hover {
         align-items: flex-start; /* Align items to the left */
     }
 
+    .navbar .logo {
+        width: 150px; /* Adjust logo size */
+    }
+
     .info {
         margin-left: 5%; /* Adjust margin */
+        margin-top: 10%; /* Adjust vertical spacing */
     }
 
     .info h1 {
@@ -367,8 +355,7 @@ button:hover {
     }
 
     .image {
-        width: 40%; /* Adjust image size */
-        right: 50px; /* Adjust position */
+        display: none; /* Hide image on smaller screens */
     }
 
     .contact {
@@ -404,10 +391,6 @@ button:hover {
         font-size: 14px; /* Further reduce text size */
     }
 
-    .navbar .logo {
-        width: 150px; /* Adjust logo size */
-    }
-
     .icons a,
     .ICONS a {
         font-size: 40px; /* Smaller icons on extra small screens */
@@ -415,101 +398,5 @@ button:hover {
 
     .contact {
         width: 95%; /* Make contact form full width */
-    }
-}
-
-/* Existing styles above... */
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .info {
-        margin-left: 5%;
-    }
-
-    .info h1 {
-        font-size: 50px;
-    }
-
-    .info h3 {
-        font-size: 16px;
-    }
-
-    .image {
-        display: none; /* Hide images on screens smaller than 700px */
-    }
-
-    .contact {
-        width: 90%;
-    }
-
-    .icons a,
-    .ICONS a {
-        font-size: 50px;
-    }
-
-    .project {
-        width: 150px;
-        height: 150px;
-    }
-
-    footer {
-        font-size: 12px;
-    }
-
-    .chatbot {
-        width: 90%;
-        right: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .info h1 {
-        font-size: 40px;
-    }
-
-    .info h3 {
-        font-size: 14px;
-    }
-
-    .navbar .logo {
-        width: 150px;
-    }
-
-    .icons a,
-    .ICONS a {
-        font-size: 40px;
-    }
-
-    .contact {
-        width: 95%;
-    }
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    .cont {
-        flex-direction: column; /* Stack icons vertically */
-        margin: 20px 0; /* Adjust vertical spacing for smaller screens */
-        gap: 30px; /* Reduced gap for better spacing */
-    }
-
-    .cont ion-icon {
-        font-size: 30px; /* Adjust icon size */
-    }
-}
-
-@media (max-width: 480px) {
-    .cont {
-        margin: 10px 0; /* Further adjust margins for small screens */
-        gap: 20px; /* Smaller gap between icons */
-    }
-
-    .cont ion-icon {
-        font-size: 25px; /* Smaller icons on extra small screens */
     }
 }
