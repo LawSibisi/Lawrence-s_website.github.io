@@ -1,4 +1,4 @@
-* {
+* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* Ensure consistent box sizing */
@@ -233,6 +233,14 @@ ul li a:hover {
     background: rgb(230, 104, 59);
 }
 
+.cont {
+    display: flex; /* Added for layout */
+    justify-content: center; /* Center icons */
+    margin: -50px 0; /* Adjusted to provide vertical spacing */
+    gap: 50px; /* Add space between icons */
+     
+}
+
 .cont a { 
     text-decoration: none;
     color: #000;
@@ -241,15 +249,15 @@ ul li a:hover {
 .cont ion-icon { 
     margin-left: 7%;
     color: #000;
-    margin-right: -60px;
     font-size: 40px;
     transition: .4s ease;
-    margin-top: -50px;
 }
 
 .cont ion-icon:hover { 
     color: rgb(230, 104, 59);
 }
+
+
 
 footer {
     background: rgba(36, 32, 30, 0.9);
@@ -479,5 +487,29 @@ button:hover {
 
     .contact {
         width: 95%;
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .cont {
+        flex-direction: column; /* Stack icons vertically */
+        margin: 20px 0; /* Adjust vertical spacing for smaller screens */
+        gap: 30px; /* Reduced gap for better spacing */
+    }
+
+    .cont ion-icon {
+        font-size: 30px; /* Adjust icon size */
+    }
+}
+
+@media (max-width: 480px) {
+    .cont {
+        margin: 10px 0; /* Further adjust margins for small screens */
+        gap: 20px; /* Smaller gap between icons */
+    }
+
+    .cont ion-icon {
+        font-size: 25px; /* Smaller icons on extra small screens */
     }
 }
