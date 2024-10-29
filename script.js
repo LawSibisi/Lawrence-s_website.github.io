@@ -31,12 +31,12 @@
 
 //         // Add the response
 //         messagesDiv.innerHTML += `<div class="message-chatbot">Chatbot: ${response}</div>`;
-        
+
 //         // Show follow-up question if a specific response was given
 //         if (response.includes("learn more about") || response.includes("see the skills") || response.includes("get in touch")) {
 //             messagesDiv.innerHTML += `<div class="message-chatbot">Chatbot: Is there anything else I can assist you with?</div>`;
 //         }
-        
+
 //         input.value = '';
 //     }
 // }
@@ -56,7 +56,7 @@ function toggleChat() {
     if (body.style.display === 'none') {
         // Clear the chat messages when opening the chat
         messagesDiv.innerHTML = '';
-        
+
         // Show the chat body
         body.style.display = 'block';
     } else {
@@ -89,12 +89,12 @@ function sendMessage(event) {
 
         // Add the response
         messagesDiv.innerHTML += `<div class="message-chatbot">Chatbot: ${response}</div>`;
-        
+
         // Show follow-up question if a specific response was given
         if (response.includes("learn more about") || response.includes("see the skills") || response.includes("get in touch")) {
             messagesDiv.innerHTML += `<div class="message-chatbot">Chatbot: Is there anything else I can assist you with?</div>`;
         }
-        
+
         input.value = '';
     }
 }

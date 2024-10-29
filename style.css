@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensure consistent box sizing */
+    box-sizing: border-box;
+    /* Ensure consistent box sizing */
 }
 
 .main {
@@ -146,13 +147,33 @@ ul li a:hover {
     transition: color 0.3s;
 }
 
-.ICONS a:nth-child(1) { color: #F44336; } /* Java */
-.ICONS a:nth-child(2) { color: #8CC84B; } /* Linux */
-.ICONS a:nth-child(3) { color: #2496ED; } /* Docker */
+.ICONS a:nth-child(1) {
+    color: #F44336;
+}
 
-.ICONS a:hover:nth-child(1) { color: #FF5722; }
-.ICONS a:hover:nth-child(2) { color: #76FF03; }
-.ICONS a:hover:nth-child(3) { color: #0D47A1; }
+/* Java */
+.ICONS a:nth-child(2) {
+    color: #8CC84B;
+}
+
+/* Linux */
+.ICONS a:nth-child(3) {
+    color: #2496ED;
+}
+
+/* Docker */
+
+.ICONS a:hover:nth-child(1) {
+    color: #FF5722;
+}
+
+.ICONS a:hover:nth-child(2) {
+    color: #76FF03;
+}
+
+.ICONS a:hover:nth-child(3) {
+    color: #0D47A1;
+}
 
 .project {
     position: relative;
@@ -198,7 +219,7 @@ ul li a:hover {
     font-weight: bold;
 }
 
-.contact input, 
+.contact input,
 .contact textarea {
     width: 100%;
     padding: 10px;
@@ -230,18 +251,18 @@ ul li a:hover {
     gap: 50px;
 }
 
-.cont a { 
+.cont a {
     text-decoration: none;
     color: #000;
 }
 
-.cont ion-icon { 
+.cont ion-icon {
     color: #000;
     font-size: 40px;
     transition: .4s ease;
 }
 
-.cont ion-icon:hover { 
+.cont ion-icon:hover {
     color: rgb(230, 104, 59);
 }
 
@@ -277,7 +298,8 @@ footer {
 }
 
 .chatbot-body {
-    display: none; /* Initially hidden */
+    display: none;
+    /* Initially hidden */
     padding: 10px;
 }
 
@@ -333,70 +355,88 @@ button:hover {
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column; /* Stack items vertically */
-        align-items: flex-start; /* Align items to the left */
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: flex-start;
+        /* Align items to the left */
     }
 
     .navbar .logo {
-        width: 150px; /* Adjust logo size */
+        width: 150px;
+        /* Adjust logo size */
     }
 
     .info {
-        margin-left: 5%; /* Adjust margin */
-        margin-top: 10%; /* Adjust vertical spacing */
+        margin-left: 5%;
+        /* Adjust margin */
+        margin-top: 10%;
+        /* Adjust vertical spacing */
     }
 
     .info h1 {
-        font-size: 50px; /* Smaller heading on mobile */
+        font-size: 50px;
+        /* Smaller heading on mobile */
     }
 
     .info h3 {
-        font-size: 16px; /* Adjust text size */
+        font-size: 16px;
+        /* Adjust text size */
     }
 
     .image {
-        display: none; /* Hide image on smaller screens */
+        display: none;
+        /* Hide image on smaller screens */
     }
 
     .contact {
-        width: 90%; /* Make contact form wider on smaller screens */
+        width: 90%;
+        /* Make contact form wider on smaller screens */
     }
 
     .icons a,
     .ICONS a {
-        font-size: 50px; /* Adjust icon size for smaller screens */
+        font-size: 50px;
+        /* Adjust icon size for smaller screens */
     }
 
     .project {
-        width: 150px; /* Adjust project size */
+        width: 150px;
+        /* Adjust project size */
         height: 150px;
     }
 
     footer {
-        font-size: 12px; /* Smaller footer text */
+        font-size: 12px;
+        /* Smaller footer text */
     }
 
     .chatbot {
-        width: 90%; /* Make chatbot width responsive */
-        right: 10px; /* Adjust position */
+        width: 90%;
+        /* Make chatbot width responsive */
+        right: 10px;
+        /* Adjust position */
     }
 }
 
 @media (max-width: 480px) {
     .info h1 {
-        font-size: 40px; /* Further reduce heading size */
+        font-size: 40px;
+        /* Further reduce heading size */
     }
 
     .info h3 {
-        font-size: 14px; /* Further reduce text size */
+        font-size: 14px;
+        /* Further reduce text size */
     }
 
     .icons a,
     .ICONS a {
-        font-size: 40px; /* Smaller icons on extra small screens */
+        font-size: 40px;
+        /* Smaller icons on extra small screens */
     }
 
     .contact {
-        width: 95%; /* Make contact form full width */
+        width: 95%;
+        /* Make contact form full width */
     }
 }
