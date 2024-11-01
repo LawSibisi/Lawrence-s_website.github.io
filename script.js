@@ -31,7 +31,7 @@ function sendMessage(event) {
 
         // Respond based on keywords in the user's message
         if (message.toLowerCase().includes("about")) {
-            response = `You can learn more about Lawrence <a href="about.html">here</a>.`;
+            response = `Hello! I'm Lawrence Sibisi, a passionate Junior DevOps Engineer and aspiring software developer with holding a Diplom in Information Technology. If you can learn more about Lawrence <a href="about.html">here</a>.`;
         } else if (message.toLowerCase().includes("skills")) {
             response = `To see the skills Lawrence has, visit his <a href="Skills.html">skills</a> page.`;
         } else if (message.toLowerCase().includes("contact")) {
