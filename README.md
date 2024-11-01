@@ -24,7 +24,10 @@ Features
 - Chatbot: A simple chatbot to answer common questions about my portfolio.
 - Navigation Bar: Easy access to different sections including Home, About, Skills, and Contact.
 - Contact Form: Allows users to send messages directly to me.
-  
+
+how to access my website:
+https://lawsibisi.github.io/Lawrence-s_website.github.io/
+
 Setup
 
 To view the portfolio locally, follow these steps:
